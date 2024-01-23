@@ -1,0 +1,160 @@
+
+:root{
+    --bg-color: #172937;
+    --bg-upper: #253644;
+}
+
+body{
+    margin-top: 40px;
+    background-color: var(--bg-color);
+}
+
+body::before{
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.box{
+    background-color: var(--bg-upper);
+    /* min-height: 900px; */
+    font-size: 2rem; 
+}
+
+.inner-box{
+    background-color: var(--bg-color);
+    margin: 20px 20px;
+}
+h2{
+    font-size: 2rem;
+    color: white;
+    margin: 20px 20px;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 6px;
+    text-underline-offset: .25em;
+}
+h4{
+    color: white;
+    margin: 5px 5px;
+    font-size: 0.6rem;
+}
+p{
+    color: white;
+    font-size: 0.5rem;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content img{
+    margin: 10px 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar .info a {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+.sidebar .info span {
+    text-transform: uppercase;
+    color: orange;
+}
+
+.contact a {
+    display: block;
+    font-size: 0.5rem;
+    color: white;
+    margin: 2rem 0;
+
+}
+
+.contact a:hover {
+    color: orange;
+}
+/* .social ul{
+    display: flex;
+} */
+.social a {
+
+    font-size: 0.8rem;
+    color: white;
+    margin: 0 .7rem;
+}
+
+.social a:hover {
+    color: orchid;
+}
+
+.pbox {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #172937;
+    border-radius: 15px;
+}
+
+ .pbox p {
+    color: white;
+    font-size: 0.3rem;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+
+
+
+
+
+@media (min-width: 576px){
+    body::before{
+        content: "SM";
+    }
+    
+}
+@media (min-width: 768px){
+    body::before{
+        content: "MD";
+    }
+}
+@media (min-width: 992px){
+    body::before{
+        content: "LG";
+    }
+}
+@media (min-width: 1200px){
+    body::before{
+        content: "XL";
+    }
+}
+@media (max-width: 422px){
+    body{
+        display: none;
+    }
+}
